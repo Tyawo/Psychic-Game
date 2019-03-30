@@ -1,9 +1,7 @@
 
 
-
-
-var computerChoices = ['a', 'b', 'c' , 'd' , 'e' , 'f' , 'g' , 'h' , 'i' , 'j' , 'k' , 'l' , 
-'m' , 'n', 'o', 'p', 'q' ,'r', 's', 't', 'u', 'v', 'w', 'x', 'y', 'z'] ;
+var computerChoices = ['a', 'b', 'c' , 'd' , 'e' , 'f' , 'g' , 'h' , 'i' , 'j' ,
+ 'k' , 'l' , 'm' , 'n', 'o', 'p', 'q' ,'r', 's', 't', 'u', 'v', 'w', 'x', 'y', 'z'] ;
 
 var wins = 0;
 var losses = 0;
@@ -33,12 +31,12 @@ document.onkeyup = function(event){
             letterUsed =[];
                         
         }else{
-            guessesLeft--
-            letterUsed.push(userGuess)
+            guessesLeft--;
+            letterUsed.push(userGuess);
         }
         
         if(guessesLeft === 0) {
-            losses++
+            losses++;
             guessesLeft = 9;
             letterUsed = [];
         }

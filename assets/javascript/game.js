@@ -21,6 +21,8 @@ document.onkeyup = function(event){
 
     if(guessesLeft === 9){
         computerGuess = computerChoices[Math.floor(Math.random() * computerChoices.length)];
+
+        
     }
         var userGuess = event.key;
         userGuess = userGuess.toLowerCase()
